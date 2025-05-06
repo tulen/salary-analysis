@@ -60,7 +60,12 @@ namespace salary_analysis
                     else
                     {
                         // Логирование ошибки (можно сделать вывод в лог или просто пропустить запись)
-                        Console.WriteLine($"Ошибка в строке {row}: Некорректные данные. Год: {yearCell.GetValue < string()} | Мужская зарплата: {maleSalaryCell.GetValue < string()} | Женская зарплата: {femaleSalaryCell.GetValue < string()}");
+                        MessageBox.Show(
+                        $"Ошибка в строке {row}: Некорректные данные. Год: {yearCell.GetValue<object>()} | Мужская зарплата: {maleSalaryCell.GetValue<object>()} | Женская зарплата: {femaleSalaryCell.GetValue<object>()}",
+                        "Ошибка загрузки данных",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Error
+);
                     }
 
                     row++;
