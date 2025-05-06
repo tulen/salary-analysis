@@ -15,3 +15,4 @@ C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0
 C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.pdb
 C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.genruntimeconfig.cache
 C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\ref\salary-analysis.dll
+C:\Users\Anastasia\source\repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.csproj.AssemblyReference.cache
