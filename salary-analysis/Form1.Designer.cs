@@ -40,7 +40,7 @@
             // 
             // Grafic_btn
             // 
-            Grafic_btn.Location = new Point(347, 210);
+            Grafic_btn.Location = new Point(377, 234);
             Grafic_btn.Name = "Grafic_btn";
             Grafic_btn.Size = new Size(142, 56);
             Grafic_btn.TabIndex = 0;
@@ -49,7 +49,7 @@
             // 
             // Prognoz_btn
             // 
-            Prognoz_btn.Location = new Point(329, 91);
+            Prognoz_btn.Location = new Point(359, 115);
             Prognoz_btn.Name = "Prognoz_btn";
             Prognoz_btn.Size = new Size(164, 77);
             Prognoz_btn.TabIndex = 1;
@@ -58,14 +58,14 @@
             // 
             // numericUpDown1
             // 
-            numericUpDown1.Location = new Point(329, 36);
+            numericUpDown1.Location = new Point(359, 60);
             numericUpDown1.Name = "numericUpDown1";
             numericUpDown1.Size = new Size(160, 27);
             numericUpDown1.TabIndex = 2;
             // 
             // Download_btn
             // 
-            Download_btn.Location = new Point(351, 296);
+            Download_btn.Location = new Point(381, 320);
             Download_btn.Name = "Download_btn";
             Download_btn.Size = new Size(138, 53);
             Download_btn.TabIndex = 3;
@@ -76,7 +76,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(898, 513);
             Controls.Add(Download_btn);
             Controls.Add(numericUpDown1);
             Controls.Add(Prognoz_btn);
