@@ -7,6 +7,9 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+
         /// <summary>
         ///  Clean up any resources being used.
         /// </summary>

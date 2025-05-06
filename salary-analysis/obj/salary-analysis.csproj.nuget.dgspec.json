@@ -43,6 +43,10 @@
             "ClosedXML": {
               "target": "Package",
               "version": "[0.104.2, )"
+            },
+            "HIC.System.Windows.Forms.DataVisualization": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             }
           },
           "imports": [
