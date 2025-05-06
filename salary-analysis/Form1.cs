@@ -14,12 +14,13 @@ namespace salary_analysis
         {
             InitializeComponent();
 
-            // Настройка элементов управления, если нужно
+            
             numericUpDown1.Minimum = 1;
             numericUpDown1.Maximum = 10;
             chart1.ChartAreas.Add(new ChartArea("MainArea"));
         }
-
+        
+        
         private void Download_btn_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -32,11 +33,11 @@ namespace salary_analysis
                     salaryRecords = DataLoader.LoadFromExcel(openFileDialog.FileName);
                     DataTable table = DataLoader.ToDataTable(salaryRecords);
                     dataGridView1.DataSource = table;
-                    MessageBox.Show("Файл загружен успешно!");
+                    MessageBox.Show("Г”Г Г©Г« Г§Г ГЈГ°ГіГ¦ГҐГ­ ГіГ±ГЇГҐГёГ­Г®!");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Ошибка загрузки: " + ex.Message);
+                    MessageBox.Show("ГЋГёГЁГЎГЄГ  Г§Г ГЈГ°ГіГ§ГЄГЁ: " + ex.Message);
                 }
             }
         }
@@ -45,19 +46,19 @@ namespace salary_analysis
         {
             if (salaryRecords.Count == 0)
             {
-                MessageBox.Show("Сначала загрузите данные.");
+                MessageBox.Show("Г‘Г­Г Г·Г Г«Г  Г§Г ГЈГ°ГіГ§ГЁГІГҐ Г¤Г Г­Г­Г»ГҐ.");
                 return;
             }
 
             chart1.Series.Clear();
 
-            var maleSeries = new Series("Мужчины")
+            var maleSeries = new Series("ГЊГіГ¦Г·ГЁГ­Г»")
             {
                 ChartType = SeriesChartType.Line,
                 Color = Color.Blue
             };
 
-            var femaleSeries = new Series("Женщины")
+            var femaleSeries = new Series("Г†ГҐГ­Г№ГЁГ­Г»")
             {
                 ChartType = SeriesChartType.Line,
                 Color = Color.Red
@@ -95,8 +96,8 @@ namespace salary_analysis
             }
 
             MessageBox.Show(
-                $"Макс. рост у мужчин: {maxGrowthM:F2}%\nМин. рост/падение у мужчин: {minGrowthM:F2}%\n" +
-                $"Макс. рост у женщин: {maxGrowthF:F2}%\nМин. рост/падение у женщин: {minGrowthF:F2}%"
+                $"ГЊГ ГЄГ±. Г°Г®Г±ГІ Гі Г¬ГіГ¦Г·ГЁГ­: {maxGrowthM:F2}%\nГЊГЁГ­. Г°Г®Г±ГІ/ГЇГ Г¤ГҐГ­ГЁГҐ Гі Г¬ГіГ¦Г·ГЁГ­: {minGrowthM:F2}%\n" +
+                $"ГЊГ ГЄГ±. Г°Г®Г±ГІ Гі Г¦ГҐГ­Г№ГЁГ­: {maxGrowthF:F2}%\nГЊГЁГ­. Г°Г®Г±ГІ/ГЇГ Г¤ГҐГ­ГЁГҐ Гі Г¦ГҐГ­Г№ГЁГ­: {minGrowthF:F2}%"
             );
         }
 
@@ -104,7 +105,7 @@ namespace salary_analysis
         {
             if (salaryRecords.Count < 3)
             {
-                MessageBox.Show("Недостаточно данных для прогноза (нужно минимум 3 года).");
+                MessageBox.Show("ГЌГҐГ¤Г®Г±ГІГ ГІГ®Г·Г­Г® Г¤Г Г­Г­Г»Гµ Г¤Г«Гї ГЇГ°Г®ГЈГ­Г®Г§Г  (Г­ГіГ¦Г­Г® Г¬ГЁГ­ГЁГ¬ГіГ¬ 3 ГЈГ®Г¤Г ).");
                 return;
             }
 
@@ -114,14 +115,14 @@ namespace salary_analysis
             var forecastF = MovingAverageForecast(salaryRecords.Select(r => r.FemaleSalary).ToList(), forecastYears);
             int startYear = salaryRecords.Last().Year + 1;
 
-            var forecastMale = new Series("Прогноз (М)")
+            var forecastMale = new Series("ГЏГ°Г®ГЈГ­Г®Г§ (ГЊ)")
             {
                 ChartType = SeriesChartType.Line,
                 Color = Color.LightBlue,
                 BorderDashStyle = ChartDashStyle.Dash
             };
 
-            var forecastFemale = new Series("Прогноз (Ж)")
+            var forecastFemale = new Series("ГЏГ°Г®ГЈГ­Г®Г§ (Г†)")
             {
                 ChartType = SeriesChartType.Line,
                 Color = Color.Pink,
@@ -153,4 +154,4 @@ namespace salary_analysis
         }
     }
 }
-
+// [РћР±С‰РёРµ РєРѕРјРјРµРЅС‚Р°СЂРёРё] Р СѓСЃСЃРєРёРµ СЃРёРјРѕР»С‹ Р»РѕРјР°СЋС‚СЃСЏ - РЅРµРѕР±С…РѕРґРёРјРѕ РёР·РјРµРЅРёС‚СЊ РєРѕРґРёСЂРѕРІРєСѓ РЅР° UTF8 - РћС‚ РќР°СЃС‚Рё
