@@ -20,6 +20,7 @@ namespace salary_analysis
         //(например, если в ячейках будут пустые или некорректные значения), чтобы избежать пропуска записей - От Насти
         
         // Загружаем данные из Excel-файла
+        // Добавление обработки ошибок при парсинге данных
         public static List<SalaryRecord> LoadFromExcel(string filePath)
         {
             var records = new List<SalaryRecord>();
@@ -38,9 +39,16 @@ namespace salary_analysis
                     var maleSalaryCell = worksheet.Cell(row, 2);
                     var femaleSalaryCell = worksheet.Cell(row, 3);
 
-                    if (int.TryParse(yearCell.GetValue<string>(), out int year) &&
-                        double.TryParse(maleSalaryCell.GetValue<string>(), out double maleSalary) &&
-                        double.TryParse(femaleSalaryCell.GetValue<string>(), out double femaleSalary))
+                    int year = 0;
+                    double maleSalary = 0;
+                    double femaleSalary = 0;
+
+                    bool yearValid = int.TryParse(yearCell.GetValue<string>(), out year);
+                    bool maleSalaryValid = double.TryParse(maleSalaryCell.GetValue<string>(), out maleSalary);
+                    bool femaleSalaryValid = double.TryParse(femaleSalaryCell.GetValue<string>(), out femaleSalary);
+
+                    // Проверка на корректность данных в ячейках
+                    if (yearValid && maleSalaryValid && femaleSalaryValid)
                     {
                         records.Add(new SalaryRecord
                         {
@@ -48,6 +56,11 @@ namespace salary_analysis
                             MaleSalary = maleSalary,
                             FemaleSalary = femaleSalary
                         });
+                    }
+                    else
+                    {
+                        // Логирование ошибки (можно сделать вывод в лог или просто пропустить запись)
+                        Console.WriteLine($"Ошибка в строке {row}: Некорректные данные. Год: {yearCell.GetValue < string()} | Мужская зарплата: {maleSalaryCell.GetValue < string()} | Женская зарплата: {femaleSalaryCell.GetValue < string()}");
                     }
 
                     row++;
