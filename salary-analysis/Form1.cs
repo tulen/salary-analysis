@@ -1,3 +1,4 @@
+
 namespace salary_analysis
 {
     public partial class Form1 : Form

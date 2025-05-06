@@ -1,0 +1,8 @@
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.csproj.AssemblyReference.cache
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary_analysis.Form1.resources
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.csproj.GenerateResource.cache
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.AssemblyInfoInputs.cache
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.AssemblyInfo.cs
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.csproj.CoreCompileInputs.cache
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.sourcelink.json

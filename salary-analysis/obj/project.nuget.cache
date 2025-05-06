@@ -1,8 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "e7aEZAtIu7RSFGhrqiyMr/hdOac5ZCz3Ghce8Se+lIp/Yd9KXG6dlS3B8jXo8bJqOfNMv/2M9tleBQ7fFc2nNA==",
+  "dgSpecHash": "23uhAmRRl3J+dKXYAJnaRzsJHJ+G0VrEbFGHrj5CbY0TkRpPaSp5vg430HxGXqRHq4qEyFf0eaOgkol3oCPVVg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Anastasia\\source\\repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Ann\\SUAI\\Технологии Проги\\лр3-2\\salary-analysis\\salary-analysis.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ms.Ann\\.nuget\\packages\\closedxml\\0.104.2\\closedxml.0.104.2.nupkg.sha512",
+    "C:\\Users\\ms.Ann\\.nuget\\packages\\closedxml.parser\\1.2.0\\closedxml.parser.1.2.0.nupkg.sha512",
+    "C:\\Users\\ms.Ann\\.nuget\\packages\\documentformat.openxml\\3.1.1\\documentformat.openxml.3.1.1.nupkg.sha512",
+    "C:\\Users\\ms.Ann\\.nuget\\packages\\documentformat.openxml.framework\\3.1.1\\documentformat.openxml.framework.3.1.1.nupkg.sha512",
+    "C:\\Users\\ms.Ann\\.nuget\\packages\\excelnumberformat\\1.1.0\\excelnumberformat.1.1.0.nupkg.sha512",
+    "C:\\Users\\ms.Ann\\.nuget\\packages\\rbush\\4.0.0\\rbush.4.0.0.nupkg.sha512",
+    "C:\\Users\\ms.Ann\\.nuget\\packages\\sixlabors.fonts\\1.0.0\\sixlabors.fonts.1.0.0.nupkg.sha512",
+    "C:\\Users\\ms.Ann\\.nuget\\packages\\system.io.packaging\\8.0.1\\system.io.packaging.8.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
