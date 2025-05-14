@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anastasia\\Source\\Repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj": {}
+    "C:\\Users\\Anastasia\\source\\repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anastasia\\Source\\Repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj": {
+    "C:\\Users\\Anastasia\\source\\repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anastasia\\Source\\Repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj",
+        "projectUniqueName": "C:\\Users\\Anastasia\\source\\repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj",
         "projectName": "salary-analysis",
-        "projectPath": "C:\\Users\\Anastasia\\Source\\Repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj",
+        "projectPath": "C:\\Users\\Anastasia\\source\\repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj",
         "packagesPath": "C:\\Users\\Anastasia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anastasia\\Source\\Repos\\salary-analysis\\salary-analysis\\obj\\",
+        "outputPath": "C:\\Users\\Anastasia\\source\\repos\\salary-analysis\\salary-analysis\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Anastasia\\AppData\\Roaming\\NuGet\\NuGet.Config",
