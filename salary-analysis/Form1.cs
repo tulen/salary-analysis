@@ -14,13 +14,13 @@ namespace salary_analysis
         {
             InitializeComponent();
 
-            
+
             numericUpDown1.Minimum = 1;
             numericUpDown1.Maximum = 10;
             chart1.ChartAreas.Add(new ChartArea("MainArea"));
         }
-        
-        
+
+
         private void Download_btn_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -33,11 +33,11 @@ namespace salary_analysis
                     salaryRecords = DataLoader.LoadFromExcel(openFileDialog.FileName);
                     DataTable table = DataLoader.ToDataTable(salaryRecords);
                     dataGridView1.DataSource = table;
-                    MessageBox.Show("Ôàéë çàãðóæåí óñïåøíî!");
+                    MessageBox.Show("Файл загружен успешко!");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Îøèáêà çàãðóçêè: " + ex.Message);
+                    MessageBox.Show("Ошибка загрузки: " + ex.Message);
                 }
             }
         }
@@ -46,7 +46,7 @@ namespace salary_analysis
         {
             if (salaryRecords.Count == 0)
             {
-                MessageBox.Show("Ñíà÷àëà çàãðóçèòå äàííûå.");
+                MessageBox.Show("Сначала загрузите данные.");
                 return;
             }
 
@@ -63,13 +63,13 @@ namespace salary_analysis
             MessageBox.Show(builder.GetFormattedMaxGrowth(true) + "\n" + builder.GetFormattedMaxGrowth(false));
 
         }
-        
+
 
         private void Prognoz_btn_Click(object sender, EventArgs e)
         {
             if (salaryRecords.Count < 3)
             {
-                MessageBox.Show("Íåäîñòàòî÷íî äàííûõ äëÿ ïðîãíîçà (íóæíî ìèíèìóì 3 ãîäà).");
+                MessageBox.Show("Недостаточно данных для прогноза (нужно минимум 3 года).");
                 return;
             }
 
@@ -94,6 +94,11 @@ namespace salary_analysis
             }
 
             return extended.Skip(data.Count).ToList();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
