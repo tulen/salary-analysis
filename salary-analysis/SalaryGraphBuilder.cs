@@ -28,6 +28,7 @@ namespace salary_analysis
             chart.Series.Clear();
             chart.ChartAreas.Clear();
             chart.ChartAreas.Add(new System.Windows.Forms.DataVisualization.Charting.ChartArea("Main"));
+            //Комментарий Анны:  добавить подписи к осям X и Y — «Год» и «Зарплата»
 
             var maleSeries = new System.Windows.Forms.DataVisualization.Charting.Series("Мужчины")
             {
