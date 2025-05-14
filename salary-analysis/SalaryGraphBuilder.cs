@@ -28,6 +28,7 @@ namespace salary_analysis
             chart.Series.Clear();
             chart.ChartAreas.Clear();
             chart.ChartAreas.Add(new System.Windows.Forms.DataVisualization.Charting.ChartArea("Main"));
+            //Комментарий Анны:  добавить подписи к осям X и Y — «Год» и «Зарплата»
 
             //Добавляем подписи к осям
             chart.ChartAreas[0].AxisX.Title = "Год";
