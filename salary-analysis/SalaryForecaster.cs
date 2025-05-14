@@ -6,6 +6,7 @@ using System.Drawing;
 
 public class SalaryForecaster
 {
+    //Комментарий Анны: Сделать n и years параметром по умолчанию для удобства вызова метода без лишних аргументов
     public List<double> Forecast(List<double> values, int n, int years)
     {
         if (values.Count < n)
