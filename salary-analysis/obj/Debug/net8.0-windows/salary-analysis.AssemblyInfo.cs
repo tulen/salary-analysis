@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("salary-analysis")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac051cfa572f24279100144e66bdc2660a543e8e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d40323bad3a5f0eb6c4d7d4131fe4f970bfeef6d")]
 [assembly: System.Reflection.AssemblyProductAttribute("salary-analysis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("salary-analysis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

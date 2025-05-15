@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anastasia\\source\\repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj": {}
+    "C:\\Ann\\SUAI\\Технологии Проги\\лр3-2\\salary-analysis\\salary-analysis.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anastasia\\source\\repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj": {
+    "C:\\Ann\\SUAI\\Технологии Проги\\лр3-2\\salary-analysis\\salary-analysis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anastasia\\source\\repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj",
+        "projectUniqueName": "C:\\Ann\\SUAI\\Технологии Проги\\лр3-2\\salary-analysis\\salary-analysis.csproj",
         "projectName": "salary-analysis",
-        "projectPath": "C:\\Users\\Anastasia\\source\\repos\\salary-analysis\\salary-analysis\\salary-analysis.csproj",
-        "packagesPath": "C:\\Users\\Anastasia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anastasia\\source\\repos\\salary-analysis\\salary-analysis\\obj\\",
+        "projectPath": "C:\\Ann\\SUAI\\Технологии Проги\\лр3-2\\salary-analysis\\salary-analysis.csproj",
+        "packagesPath": "C:\\Users\\ms.Ann\\.nuget\\packages\\",
+        "outputPath": "C:\\Ann\\SUAI\\Технологии Проги\\лр3-2\\salary-analysis\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anastasia\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ms.Ann\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -33,7 +33,7 @@ namespace salary_analysis
                     salaryRecords = DataLoader.LoadFromExcel(openFileDialog.FileName);
                     DataTable table = DataLoader.ToDataTable(salaryRecords);
                     dataGridView1.DataSource = table;
-                    MessageBox.Show("Файл успешно загружен!");
+                    MessageBox.Show("Файл загружен успешно!");
                 }
                 catch (Exception ex)
                 {
@@ -46,7 +46,7 @@ namespace salary_analysis
         {
             if (salaryRecords.Count == 0)
             {
-                MessageBox.Show("Сначала загрузите файл.");
+                MessageBox.Show("Сначала загрузите данные.");
                 return;
             }
 
@@ -74,7 +74,7 @@ namespace salary_analysis
             int forecastYears = (int)numericUpDown1.Value;
 
             // Удалим старые прогнозные серии, если они есть
-            if (chart1.Series.IndexOf("Прозноз (M)") != -1)
+            if (chart1.Series.IndexOf("Прогноз (М)") != -1)
                 chart1.Series.Remove(chart1.Series["Прогноз (М)"]);
             if (chart1.Series.IndexOf("Прогноз (Ж)") != -1)
                 chart1.Series.Remove(chart1.Series["Прогноз (Ж)"]);
