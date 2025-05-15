@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\ms.Ann\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\ms.Ann\\.nuget\\packages"
+      "C:\\Users\\Anastasia\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Anastasia\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,
