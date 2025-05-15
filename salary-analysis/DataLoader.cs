@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ClosedXML.Excel;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace salary_analysis
 {
