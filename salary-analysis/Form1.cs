@@ -51,16 +51,29 @@ namespace salary_analysis
             }
 
             var builder = new SalaryGraphBuilder(
-            salaryRecords.Select(r => new SalaryData
-            {
-                Year = r.Year,
-                MaleSalary = r.MaleSalary,
-                FemaleSalary = r.FemaleSalary
-            }).ToList());
+                salaryRecords.Select(r => new SalaryData
+                {
+                    Year = r.Year,
+                    MaleSalary = r.MaleSalary,
+                    FemaleSalary = r.FemaleSalary
+                }).ToList());
 
             builder.BuildChart(chart1);
 
-            MessageBox.Show(builder.GetFormattedMaxGrowth(true) + "\n" + builder.GetFormattedMaxGrowth(false));
+            var forecaster = new SalaryForecaster();
+
+            var (maxM, minM, maxF, minF) = forecaster.GetMinMaxGrowth(
+                salaryRecords.Select(r => new SalaryData
+                {
+                    Year = r.Year,
+                    MaleSalary = r.MaleSalary,
+                    FemaleSalary = r.FemaleSalary
+                }).ToList());
+
+            string result = $"Мужчины: максимум = {maxM:F2}%, минимум = {minM:F2}%\n" +
+                            $"Женщины: максимум = {maxF:F2}%, минимум = {minF:F2}%";
+
+            MessageBox.Show(result, "Рост зарплат");
         }
 
         private void Prognoz_btn_Click(object sender, EventArgs e)
@@ -105,5 +118,7 @@ namespace salary_analysis
 
             return extended.Skip(data.Count).ToList();
         }
+
+
     }
 }
