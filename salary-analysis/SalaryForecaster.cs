@@ -64,6 +64,30 @@ namespace salary_analysis
 
             return (maleSeries, femaleSeries);
         }
+
+        public (double maxMale, double minMale, double maxFemale, double minFemale) GetMinMaxGrowth(List<SalaryData> salaryRecords)
+        {
+            if (salaryRecords.Count < 2)
+                throw new ArgumentException("Недостаточно данных для вычисления роста.");
+
+            double maxMaleGrowth = double.MinValue;
+            double minMaleGrowth = double.MaxValue;
+            double maxFemaleGrowth = double.MinValue;
+            double minFemaleGrowth = double.MaxValue;
+
+            for (int i = 1; i < salaryRecords.Count; i++)
+            {
+                double maleGrowth = ((salaryRecords[i].MaleSalary - salaryRecords[i - 1].MaleSalary) / salaryRecords[i - 1].MaleSalary) * 100;
+                if (maleGrowth > maxMaleGrowth) maxMaleGrowth = maleGrowth;
+                if (maleGrowth < minMaleGrowth) minMaleGrowth = maleGrowth;
+
+                double femaleGrowth = ((salaryRecords[i].FemaleSalary - salaryRecords[i - 1].FemaleSalary) / salaryRecords[i - 1].FemaleSalary) * 100;
+                if (femaleGrowth > maxFemaleGrowth) maxFemaleGrowth = femaleGrowth;
+                if (femaleGrowth < minFemaleGrowth) minFemaleGrowth = femaleGrowth;
+            }
+
+            return (maxMaleGrowth, minMaleGrowth, maxFemaleGrowth, minFemaleGrowth);
+        }
     }
 }
 
