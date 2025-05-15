@@ -15,7 +15,7 @@ namespace salary_analysis
         {
             InitializeComponent();
 
-            // Настройка элементов управления, если нужно
+            // пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ
             numericUpDown1.Minimum = 1;
             numericUpDown1.Maximum = 10;
             //chart1.ChartAreas.Add(new ChartArea("MainArea"));
@@ -33,11 +33,11 @@ namespace salary_analysis
                     salaryRecords = DataLoader.LoadFromExcel(openFileDialog.FileName);
                     DataTable table = DataLoader.ToDataTable(salaryRecords);
                     dataGridView1.DataSource = table;
-                    MessageBox.Show("Файл загружен успешно!");
+                    MessageBox.Show("пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ!");
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show("Ошибка загрузки: " + ex.Message);
+                    MessageBox.Show("пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: " + ex.Message);
                 }
             }
         }
@@ -46,7 +46,7 @@ namespace salary_analysis
         {
             if (salaryRecords.Count == 0)
             {
-                MessageBox.Show("Сначала загрузите данные.");
+                MessageBox.Show("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.");
                 return;
             }
 
@@ -67,17 +67,17 @@ namespace salary_analysis
         {
             if (salaryRecords.Count < 3)
             {
-                MessageBox.Show("Недостаточно данных для прогноза (нужно минимум 3 года).");
+                MessageBox.Show("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ 3 пїЅпїЅпїЅпїЅ).");
                 return;
             }
 
             int forecastYears = (int)numericUpDown1.Value;
 
-            // Удалим старые прогнозные серии, если они есть
-            if (chart1.Series.IndexOf("Прогноз (М)") != -1)
-                chart1.Series.Remove(chart1.Series["Прогноз (М)"]);
-            if (chart1.Series.IndexOf("Прогноз (Ж)") != -1)
-                chart1.Series.Remove(chart1.Series["Прогноз (Ж)"]);
+            // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅ
+            if (chart1.Series.IndexOf("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅ)") != -1)
+                chart1.Series.Remove(chart1.Series["пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅ)"]);
+            if (chart1.Series.IndexOf("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅ)") != -1)
+                chart1.Series.Remove(chart1.Series["пїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅ)"]);
 
             var forecaster = new SalaryForecaster();
             var result = forecaster.BuildForecastSeries(
