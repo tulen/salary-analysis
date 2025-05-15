@@ -73,6 +73,12 @@ namespace salary_analysis
 
             int forecastYears = (int)numericUpDown1.Value;
 
+            // Удалим старые прогнозные серии, если они есть
+            if (chart1.Series.IndexOf("Прогноз (М)") != -1)
+                chart1.Series.Remove(chart1.Series["Прогноз (М)"]);
+            if (chart1.Series.IndexOf("Прогноз (Ж)") != -1)
+                chart1.Series.Remove(chart1.Series["Прогноз (Ж)"]);
+
             var forecaster = new SalaryForecaster();
             var result = forecaster.BuildForecastSeries(
                 salaryRecords.Select(r => new SalaryData
