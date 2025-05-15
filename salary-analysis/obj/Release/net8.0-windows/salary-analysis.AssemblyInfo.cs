@@ -12,10 +12,9 @@ using System;
 using System.Reflection;
 
 [assembly: System.Reflection.AssemblyCompanyAttribute("salary-analysis")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1beccb4f36068fd7e38b29fb21fe6dc6df6acdde")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bbc053b7b8ed029f735636baf670fc973d1070cc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09f92af8dac0c5a1afaee1c4906f501626c688b3")]
 [assembly: System.Reflection.AssemblyProductAttribute("salary-analysis")]
 [assembly: System.Reflection.AssemblyTitleAttribute("salary-analysis")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
