@@ -1,18 +1,8 @@
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\bin\Debug\net8.0-windows\salary-analysis.exe
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\bin\Debug\net8.0-windows\salary-analysis.deps.json
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\bin\Debug\net8.0-windows\salary-analysis.runtimeconfig.json
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\bin\Debug\net8.0-windows\salary-analysis.dll
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\bin\Debug\net8.0-windows\salary-analysis.pdb
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary_analysis.Form1.resources
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.csproj.GenerateResource.cache
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.AssemblyInfoInputs.cache
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.AssemblyInfo.cs
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.csproj.CoreCompileInputs.cache
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.sourcelink.json
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.dll
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\refint\salary-analysis.dll
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.pdb
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.genruntimeconfig.cache
-C:\Users\Anastasia\Source\Repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\ref\salary-analysis.dll
-C:\Users\Anastasia\source\repos\salary-analysis\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.csproj.AssemblyReference.cache
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.csproj.AssemblyReference.cache
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary_analysis.Form1.resources
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.csproj.GenerateResource.cache
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.GeneratedMSBuildEditorConfig.editorconfig
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.AssemblyInfoInputs.cache
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.AssemblyInfo.cs
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.csproj.CoreCompileInputs.cache
+C:\Ann\SUAI\Технологии Проги\лр3-2\salary-analysis\obj\Debug\net8.0-windows\salary-analysis.sourcelink.json
